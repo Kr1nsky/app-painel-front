@@ -1,6 +1,6 @@
 <template>
     <v-row>
-        <v-col v-for="item in itens" :key="item" :cols="item.flex">
+        <v-col v-for="(item, index) in itens" :key="index" :cols="item.flex">
             <v-card>
                 <v-card-title class="d-flex justify-center mb-2" style="background-color: teal;">
                     <v-icon>{{ item.icon }}</v-icon>

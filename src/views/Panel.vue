@@ -1,11 +1,13 @@
 <template>
-    <v-app id="inspire" class="caixa">
-        <MainHeader class="mainHeader" />
+    <v-app id="inspire">
+        <MainHeader />
         <v-main>
-            <v-container>
+            <v-container fluid>
                 <v-row>
-                    <SideBar class="sideBar" />
-                    <v-col class="conteudo">
+                    <v-col cols="3">
+                        <SideBar />
+                    </v-col>
+                    <v-col cols="9">
                         <router-view />
                     </v-col>
                 </v-row>
@@ -13,6 +15,7 @@
         </v-main>
     </v-app>
 </template>
+  
 
 <script>
 import SideBar from '../components/SideBar.vue'
@@ -30,30 +33,3 @@ export default {
     }),
 }
 </script>
-
-<style scoped>
-.sideBar {
-    margin-top: 0%; 
-    padding-top: 10px;
-    padding-left: 0%;
-    margin-left: -3%;
-    display: flex;
-    justify-content: start;
-    width: 17%;
-    height: 400px;
-}
-
-.conteudo{
-    display: flex;
-    padding-left: 0%;
-    margin-top: 0%;
-    margin-left: 1%;
-    width: 80%;
-}
-
-.caixa {
-    position: relative;
-    width: 1480px;
-    margin: 0 auto;
-}
-</style>

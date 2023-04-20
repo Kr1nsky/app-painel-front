@@ -1,5 +1,5 @@
 <template>
-      <router-view/>
+  <router-view />
 </template>
 
 <script>
@@ -15,6 +15,8 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import '../public/style.css';
+
 html * {
   font-family: 'Inter', sans-serif;
 }

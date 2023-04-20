@@ -1,9 +1,14 @@
 <template>
-    <v-app-bar height="80px" outlined extension-height="64" color="#2A1673" app asolute>
-        <!-- <v-app-bar-title> -->
-        <img src="@/assets/logo.png" class="logo">
-        <!-- </v-app-bar-title> -->
+    <v-app-bar height="80px" outlined extension-height="64" color="primary" app asolute>
+        <v-btn icon color="accent">
+            <v-icon>mdi-web</v-icon>
+        </v-btn>
         <v-spacer></v-spacer>
+        <div>
+            <v-btn icon color="accent">
+                <v-icon>mdi-account</v-icon>
+            </v-btn>
+        </div>
     </v-app-bar>
 </template>
 
@@ -37,17 +42,6 @@ export default {
     width: 1480px;
     margin: 0 auto;
 }
-
-.logo {
-    width: 90px;
-    padding: 15px;
-    margin-top: -50px;
-    margin-left: 130px;
-    padding-top: 4%;
-    justify-content: center;
-    display: flex;
-}
-
 
 .nome-user {
     position: absolute;
