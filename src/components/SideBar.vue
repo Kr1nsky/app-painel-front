@@ -13,10 +13,10 @@
             <v-list dense nav color="primary">
                 <v-list-item v-for="item in items" :key="item.title" link :to="item.router">
                     <v-list-item-icon>
-                        <v-icon color="accent">{{ item.icon }}</v-icon>
+                        <v-icon color="secondary">{{ item.icon }}</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
-                        <v-list-item-title color="accent">{{ item.title }}</v-list-item-title>
+                        <v-list-item-title color="secondary">{{ item.title }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
@@ -33,7 +33,7 @@ export default {
                 { title: 'Dashboard', icon: 'mdi-view-dashboard', router: '/dashboard' },
                 { title: 'Itens', icon: 'mdi-star-plus', router: '/itens' },
                 { title: 'Ferramentas', icon: 'mdi-toolbox', router: '/ferramentas' },
-                { title: 'Sair', icon: 'mdi-exit-to-app', router: '/logout' },
+                { title: 'Sair', icon: 'mdi-exit-to-app', router: '/login' },
             ],
         }
     },

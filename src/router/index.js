@@ -4,32 +4,44 @@ import Panel from '../views/Panel.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Itens from '../views/Itens.vue'
 import Ferramentas from '../views/Ferramentas.vue'
+import Perfil from '../views/Perfil.vue'
+import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Panel,
     children: [
       {
-        path:'/dashboard',
-        name: 'dashboard',
+        path: '/dashboard',
+        name: 'Dashboard',
         component: Dashboard
       },
       {
-        path:'/itens',
-        name:'itens',
+        path: '/itens',
+        name: 'Itens',
         component: Itens
       },
       {
-        path:'/ferramentas',
-        name: 'ferramentas',
+        path: '/ferramentas',
+        name: 'Ferramentas',
         component: Ferramentas
+      },
+      {
+        path: '/perfil',
+        name: 'Perfil',
+        component: Perfil
       }
     ]
   },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  }
   // {
   //   path: '/about',
   //   name: 'about',
