@@ -1,23 +1,22 @@
 <template>
-    <v-main>
+    <div>
         <v-card-title>Itens</v-card-title>
         <v-card-text>
             <v-row>
                 <v-col v-for="item in itens" :key="item" :cols="item.flex">
-                    <v-card color="#D3D3D3">
+                    <v-card color="primary">
                         <v-card-text class="d-flex justify-center">
                             <v-img max-height="150" max-width="300" :src="item.image">
                             </v-img>
                         </v-card-text>
                         <v-spacer></v-spacer>
-                        <v-card-title class="d-flex justify-center">
-                            {{ item.name }}
+                        <v-card-title class="d-flex justify-center" v-text="item.name" color="accent">
                         </v-card-title>
                     </v-card>
                 </v-col>
             </v-row>
         </v-card-text>
-    </v-main>
+    </div>
 </template>
 
 <script>

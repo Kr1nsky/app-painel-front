@@ -13,7 +13,8 @@ export default new Vuetify({
                         secondary: '#D1006C',
                         accent: '#52002A',
                         error: '#D10015',
-                        success:'#00D10E',
+                        success: '#00D10E',
+                        bg: '#573848',
                   }
             }
       },

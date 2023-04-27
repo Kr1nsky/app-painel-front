@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-navigation-drawer absolute permanent color="primary" width="15%" height="100%">
+        <v-navigation-drawer absolute permanent color="primary" width="16%" height="100%">
             <v-list color="primary">
                 <v-list-item>
                     <v-list-item-content color="primary">
