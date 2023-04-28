@@ -2,8 +2,9 @@
     <v-row>
         <v-col v-for="(item, index) in itens" :key="index" :cols="item.flex">
             <v-card>
-                <v-card-title class="d-flex justify-center mb-2" color="primary" style="background-color: #8A5CA1;">
-                    <v-icon color="secondary">{{ item.icon }}</v-icon>
+                <v-card-title class="white--text d-flex justify-center mb-2" color="primary"
+                    style="background-color: #9900E0;">
+                    <v-icon color="white">{{ item.icon }}</v-icon>
                     {{ item.name }}
                 </v-card-title>
                 <v-card-text class="d-flex justify-center">
