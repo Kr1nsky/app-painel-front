@@ -1,10 +1,11 @@
 <template>
     <v-app-bar class="elevation-4" height="80px" outlined extension-height="64" color="primary" app asolute>
         <v-row style="display: flex; align-items: center; justify-content: space-between; padding: 0 2rem;">
-            <div>
+            <div style="display: flex; align-items: baseline;">
                 <v-btn icon color="white" link to="/">
                     <v-icon>mdi-web</v-icon>
                 </v-btn>
+                <p class="text-h5 white--text">Painel</p>
             </div>
             <div>
                 <v-btn icon color="white" link to="/perfil">

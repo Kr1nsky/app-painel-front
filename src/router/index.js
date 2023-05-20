@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Panel from '../views/Panel.vue'
+import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Itens from '../views/Itens.vue'
 import Ferramentas from '../views/Ferramentas.vue'
 import Perfil from '../views/Perfil.vue'
 import Login from '../views/Login.vue'
+import HomePage from '../views/HomePage.vue'
 
 Vue.use(VueRouter)
 
@@ -13,8 +14,13 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Panel,
+    component: Home,
     children: [
+      {
+        path: '/home',
+        name: 'Home',
+        component: HomePage
+      },
       {
         path: '/dashboard',
         name: 'Dashboard',

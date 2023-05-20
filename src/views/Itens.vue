@@ -4,13 +4,13 @@
         <v-card-text>
             <v-row>
                 <v-col v-for="item in itens" :key="item" :cols="item.flex">
-                    <v-card color="primary">
+                    <v-card color="primary" rounded="lg" class="elevation-10">
                         <v-card-text class="d-flex justify-center">
-                            <v-img max-height="150" max-width="300" :src="item.image">
+                            <v-img class="my-2 py-2" style="border-radius: 1.5rem;" :src="item.image">
                             </v-img>
                         </v-card-text>
                         <v-spacer></v-spacer>
-                        <v-card-title class="d-flex justify-center" v-text="item.name" color="accent">
+                        <v-card-title class="white--text d-flex justify-center" v-text="item.name">
                         </v-card-title>
                     </v-card>
                 </v-col>
@@ -26,7 +26,7 @@ export default {
     data: () => ({
         itens: [
             { name: 'Resident Evil 4', image: 'https://files.tecnoblog.net/wp-content/uploads/2022/06/resident-evil-4-remake-700x394.jpg', flex: 4 },
-            { name: 'Hitman 3', image: 'https://files.tecnoblog.net/wp-content/uploads/2021/12/hitman-3-1060x596.jpg', flex: 4 }
+            { name: 'Hitman 3', image: 'https://files.tecnoblog.net/wp-content/uploads/2021/12/hitman-3-1060x596.jpg', flex: 4 },
         ]
     })
 

@@ -15,21 +15,21 @@
         </v-main>
     </v-app>
 </template>
-  
 
 <script>
-import SideBar from '../components/SideBar.vue'
+import SideBar from '../components/SideBar.vue';
 import MainHeader from '../components/MainHeader.vue';
+
 export default {
-    name: 'panel-page',
+    name: 'HomePage',
 
     components: {
         SideBar,
         MainHeader
     },
-
     data: () => ({
         //
-    }),
+    })
 }
+
 </script>

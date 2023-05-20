@@ -14,9 +14,9 @@ export default new Vuetify({
                         accent: '#C080E0',
                         error: '#E60D0A',
                         success: '#06E603',
-                        bg: '#573848',
+                        bg: '#D8B2F9',
                         confirm: '#7A33A1',
-                        cancel: '#9840C7'
+                        cancel: '#9840C7',
                   }
             }
       },

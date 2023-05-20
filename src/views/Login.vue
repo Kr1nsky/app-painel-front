@@ -2,14 +2,14 @@
       <v-app style="background-color: #D8B2F9;">
             <v-container class="fill-height">
                   <v-row allign="center" justify="center">
-                        <v-col md="12" sm="10">
-                              <v-card class="elevation-6 mt-10" color="primary" width="auto">
+                        <v-col md="8" sm="6">
+                              <v-card class="elevation-6 mt-10" color="bg" width="auto">
                                     <v-window v-model="step">
                                           <v-window-item :value="1">
                                                 <v-row>
                                                       <v-col cols="12" sm="6">
                                                             <v-card-title
-                                                                  class="text-h5 font-weight-regular justify-space-between">
+                                                                  class="secondary--text text-h5 font-weight-regular justify-space-between">
                                                                   <span>{{ currentTitle }}</span>
                                                             </v-card-title>
                                                             <v-card-text>
@@ -36,8 +36,8 @@
                                                                               <br>
                                                                               todas as ferramentas!
                                                                         </h4>
-                                                                        <v-btn rounded color="confirm"
-                                                                              class="white--text mt-5" @click="step++">
+                                                                        <v-btn rounded color="bg"
+                                                                              class="secondary--text mt-5" @click="step++">
                                                                               Criar conta
                                                                         </v-btn>
                                                                   </v-card-text>
@@ -57,8 +57,8 @@
                                                                               <br>
                                                                               todas as ferramentas!
                                                                         </h4>
-                                                                        <v-btn rounded color="confirm"
-                                                                              class="white--text mt-5" @click="step++">
+                                                                        <v-btn rounded color="bg"
+                                                                              class="secondary--text mt-5" @click="step++">
                                                                               Login
                                                                         </v-btn>
                                                                   </v-card-text>
@@ -66,7 +66,7 @@
                                                       </v-col>
                                                       <v-col cols="12" sm="6">
                                                             <v-card-title
-                                                                  class="text-h5 font-weight-regular justify-space-between">
+                                                                  class="secondary--text text-h5 font-weight-regular justify-space-between">
                                                                   <span>{{ currentTitle }}</span>
                                                             </v-card-title>
                                                             <v-card-text>
@@ -94,8 +94,8 @@
                                                                               <v-text-field append-icon="mdi-lock"
                                                                                     label="Confirme a senha" type="password"
                                                                                     outlined></v-text-field>
-                                                                              <v-btn rounded block dark
-                                                                                    color="confirm">Login</v-btn>
+                                                                              <v-btn rounded block dark color="confirm">Criar
+                                                                                    Conta</v-btn>
                                                                         </v-col>
 
                                                                   </v-row>

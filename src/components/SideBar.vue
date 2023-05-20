@@ -27,7 +27,7 @@ export default {
     data() {
         return {
             items: [
-                { title: 'Inicio', icon: 'mdi-home', router: '/' },
+                { title: 'Inicio', icon: 'mdi-home', router: '/home' },
                 { title: 'Dashboard', icon: 'mdi-view-dashboard', router: '/dashboard' },
                 { title: 'Itens', icon: 'mdi-star-plus', router: '/itens' },
                 { title: 'Ferramentas', icon: 'mdi-toolbox', router: '/ferramentas' },
