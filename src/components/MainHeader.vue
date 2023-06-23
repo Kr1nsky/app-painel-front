@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar class="elevation-4" height="80px" outlined extension-height="64" color="primary" app asolute>
+    <v-app-bar height="80px" class="elevation-7" outlined extension-height="64" color="primary" app asolute>
         <v-row style="display: flex; align-items: center; justify-content: space-between; padding: 0 2rem;">
             <div style="display: flex; align-items: baseline;">
                 <v-btn icon color="white" link to="/">

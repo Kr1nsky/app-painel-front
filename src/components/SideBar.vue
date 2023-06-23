@@ -30,6 +30,7 @@ export default {
                 { title: 'Inicio', icon: 'mdi-home', router: '/home' },
                 { title: 'Dashboard', icon: 'mdi-view-dashboard', router: '/dashboard' },
                 { title: 'Itens', icon: 'mdi-star-plus', router: '/itens' },
+                { title: 'Swiper', icon: 'mdi-slide', router: '/swiper' },
                 { title: 'Ferramentas', icon: 'mdi-toolbox', router: '/ferramentas' },
                 { title: 'Sair', icon: 'mdi-exit-to-app', router: '/login' },
             ],

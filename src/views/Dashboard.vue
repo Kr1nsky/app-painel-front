@@ -1,26 +1,20 @@
 <template>
     <v-row>
         <v-col v-for="(item, index) in itens" :key="index" :cols="item.flex">
-            <v-card>
-                <v-card-title class="white--text d-flex justify-center mb-2" color="primary"
-                    style="background-color: #9900E0;">
-                    <v-icon color="white">{{ item.icon }}</v-icon>
-                    {{ item.name }}
-                </v-card-title>
-                <v-card-text class="d-flex justify-center">
-                    <v-progress-circular :rotate="360" :size="100" :width="15" :value="item.value" color="primary">
-                        {{ item.value + '%' }}
-                    </v-progress-circular>
-                </v-card-text>
-                <v-spacer></v-spacer>
-            </v-card>
+            <dash-card :cardInfo="item" />
         </v-col>
     </v-row>
 </template>
 
 <script>
+import DashCard from '@/components/DashboardComponents/DashCard.vue';
+
 export default {
     name: 'dash-page',
+
+    components: {
+        DashCard
+    },
 
     data: () => ({
         itens: [
@@ -28,6 +22,10 @@ export default {
             { name: 'Reload', value: 40, icon: 'mdi-sync', flex: 4 },
             { name: 'Placa de video', value: 90, icon: 'mdi-expansion-card', flex: 4 },
             { name: 'Mensagem', value: 100, icon: 'mdi-message-processing', flex: 4 },
+            { name: 'Variacoes de Acao', value: 12, icon: 'mdi-view-dashboard', flex: 4 },
+            { name: 'Price variation', value: 2, icon: 'mdi-sync', flex: 4 },
+            { name: 'Motherboard', value: 98, icon: 'mdi-expansion-card', flex: 4 },
+            { name: 'Lenguages', value: 55, icon: 'mdi-message-processing', flex: 4 },
         ]
     })
 }

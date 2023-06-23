@@ -7,6 +7,7 @@ import Ferramentas from '../views/Ferramentas.vue'
 import Perfil from '../views/Perfil.vue'
 import Login from '../views/Login.vue'
 import HomePage from '../views/HomePage.vue'
+import Swiper from '../views/SwiperPage.vue'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,11 @@ const routes = [
         path: '/perfil',
         name: 'Perfil',
         component: Perfil
+      },
+      {
+        path: '/swiper',
+        name: 'Swiper',
+        component: Swiper
       }
     ]
   },

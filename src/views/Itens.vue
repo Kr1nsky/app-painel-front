@@ -4,7 +4,7 @@
         <v-card-text>
             <v-row>
                 <v-col v-for="item in itens" :key="item" :cols="item.flex">
-                    <v-card color="primary" rounded="lg" class="elevation-10">
+                    <v-card color="primary" rounded="md" class="elevation-10">
                         <v-card-text class="d-flex justify-center">
                             <v-img class="my-2 py-2" style="border-radius: 1.5rem;" :src="item.image">
                             </v-img>
