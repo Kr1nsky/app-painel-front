@@ -9,7 +9,18 @@ export default {
 
     data: () => ({
         //
-    })
+    }),
+
+    async created() {
+        await this.listUsers();
+    },
+
+    methods: {
+        async listUsers() {
+            let { data } = await this.$api.users.list();
+            console.log(data);
+        }
+    },
 
 
 }
