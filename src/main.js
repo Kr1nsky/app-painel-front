@@ -1,16 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import vuetify from './plugins/vuetify'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import vuetify from './plugins/vuetify';
 
 
-import api from '@/store/api'
-Vue.prototype.$api = api
+import api from '@/store/api';
+import apiValorant from './store/apiValorant';
 
-import {session} from '@/store/session'
-Vue.prototype.$session = session
+Vue.prototype.$apiValorant = apiValorant;
+Vue.prototype.$api = api;
 
-Vue.config.productionTip = false
+import { session } from '@/store/session';
+Vue.prototype.$session = session;
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
